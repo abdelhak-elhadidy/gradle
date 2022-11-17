@@ -51,7 +51,7 @@ publishing {
                     username = "recloudstream"
                     password = token
                 }
-                setUrl("https://maven.pkg.github.com/recloudstream/gradle")
+                setUrl("https://maven.pkg.github.com/apdelhaktarek/gradle")
             }
         } else {
             mavenLocal()
