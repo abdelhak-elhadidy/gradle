@@ -88,7 +88,7 @@ abstract class CloudstreamExtension @Inject constructor(project: Project) {
 class ApkInfo(extension: CloudstreamExtension, release: String) {
     val cache = extension.userCache.resolve("cloudstream")
 
-    var urlPrefix = "https://github.com/recloudstream/cloudstream/releases/download/${release}"
+    var urlPrefix = "https://github.com/apdelhaktarek/Stream/releases/download/${release}"
     val jarFile = cache.resolve("cloudstream.jar")
 }
 
