@@ -80,7 +80,7 @@ abstract class CompileDexTask : DefaultTask() {
                         reader.accept(classNode, 0)
 
                         for (annotation in classNode.visibleAnnotations.orEmpty() + classNode.invisibleAnnotations.orEmpty()) {
-                            if (annotation.desc == "Lcom/lagradost/cloudstream3/plugins/CloudstreamPlugin;") {
+                            if (annotation.desc == "Lcom/vodbot/egy/plugins/CloudstreamPlugin;") {
                                 val cloudstream = project.extensions.getCloudstream()
 
                                 require(cloudstream.pluginClassName == null) {

@@ -7,7 +7,7 @@ import org.gradle.api.provider.ListProperty
 import javax.inject.Inject
 
 abstract class CloudstreamExtension @Inject constructor(project: Project) {
-    val userCache = project.gradle.gradleUserHomeDir.resolve("caches").resolve("cloudstream")
+    val userCache = project.gradle.gradleUserHomeDir.resolve("caches").resolve("vodbot")
 
     val apiVersion = 1
 
@@ -86,10 +86,10 @@ abstract class CloudstreamExtension @Inject constructor(project: Project) {
 }
 
 class ApkInfo(extension: CloudstreamExtension, release: String) {
-    val cache = extension.userCache.resolve("cloudstream")
+    val cache = extension.userCache.resolve("vodbot")
 
     var urlPrefix = "https://github.com/apdelhaktarek/Stream/releases/download/${release}"
-    val jarFile = cache.resolve("cloudstream.jar")
+    val jarFile = cache.resolve("vodbot.jar")
 }
 
 class Repo(val user: String, val repo: String, val url: String, val rawLinkFormat: String) {

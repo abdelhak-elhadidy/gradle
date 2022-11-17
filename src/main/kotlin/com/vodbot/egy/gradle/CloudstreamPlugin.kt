@@ -7,7 +7,7 @@ import com.vodbot.egy.gradle.configuration.registerConfigurations
 
 abstract class CloudstreamPlugin : Plugin<Project> {
     override fun apply(project: Project) {
-        project.extensions.create("cloudstream", CloudstreamExtension::class.java, project)
+        project.extensions.create("vodbot", CloudstreamExtension::class.java, project)
 
         registerTasks(project)
         registerConfigurations(project)

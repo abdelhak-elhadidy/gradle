@@ -19,7 +19,7 @@ abstract class GenSourcesTask : DefaultTask() {
         val extension = project.extensions.getCloudstream()
         val apkinfo = extension.apkinfo!!
 
-        val sourcesJarFile = apkinfo.cache.resolve("cloudstream-sources.jar")
+        val sourcesJarFile = apkinfo.cache.resolve("vodbot-sources.jar")
 
         val url = URL("${apkinfo.urlPrefix}/app-sources.jar")
 

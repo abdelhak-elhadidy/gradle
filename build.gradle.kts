@@ -48,7 +48,7 @@ publishing {
         if (token != null) {
             maven {
                 credentials {
-                    username = "recloudstream"
+                    username = "apdelhaktarek"
                     password = token
                 }
                 setUrl("https://maven.pkg.github.com/apdelhaktarek/gradle")

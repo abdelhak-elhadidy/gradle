@@ -14,7 +14,7 @@ import org.gradle.api.tasks.compile.AbstractCompile
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import com.vodbot.egy.gradle.findCloudstream
 
-const val TASK_GROUP = "cloudstream"
+const val TASK_GROUP = "vodbot"
 
 fun registerTasks(project: Project) {
     val extension = project.extensions.getCloudstream()
@@ -118,7 +118,7 @@ fun registerTasks(project: Project) {
 
             it.doLast { task ->
                 extension.fileSize = task.outputs.files.singleFile.length()
-                task.logger.lifecycle("Made Cloudstream package at ${task.outputs.files.singleFile}")
+                task.logger.lifecycle("Made VodBot package at ${task.outputs.files.singleFile}")
             }
         }
         project.rootProject.tasks.getByName("makePluginsJson").dependsOn(make)
